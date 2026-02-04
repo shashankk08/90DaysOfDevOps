@@ -1,0 +1,69 @@
+cd /home
+ls
+clear
+sudo useradd -m tokyo berlin professor
+clear
+sudo useradd -m tokyo
+sudo useradd -m berlin
+sudo useradd -m professor
+cat /etc/passwd
+clear
+su tokyo
+clear
+ls
+sudo passwd tokyo
+sudo passwd berlin
+clear
+su berlin
+sudo su berlin
+sudo useradd -m tokyo -s /usr/bin/bash
+whih bash
+which bash
+clear
+su tokyo
+sudo /etc/passwd
+cat /etc/passwd
+cd ..
+ls
+cd home
+ls
+sudo groupadd developer
+sudo groupadd admin
+sudo groupadd admins
+cat /etc/passwd
+cd ..
+cd home
+cat /etc/group
+sudo usermod -aG tokyo developer
+sudo usermod -aG developer tokyo
+sudo usermod -aG admins professor
+sudo usermod -aG admins:developer berlin
+sudo usermod -aG admins,developer berlin
+cat /etc/group
+clear
+cd ..
+cd /opt
+ls
+mkdir dev-project
+ls
+ls
+cd home
+ls
+sudo passwd professor
+su professor
+clear
+chown :developers /opt/dev-project
+chown developer /opt/dev-project
+ls -l
+cat /etx/group
+cat /etc/group
+chown developer /opt/dev-project
+chown :developer /opt/dev-project
+ls -ld /opt/dev-project
+cd /
+chmod 775 /opt/dev-project
+ls -ld
+ls -ld /opt/dev-project
+clear
+su tokyo
+history
