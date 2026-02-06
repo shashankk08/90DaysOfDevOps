@@ -1,0 +1,37 @@
+1️⃣ Who Gets Permission (u g o a)
+
+u = owner
+g = group
+o = others
+a = all (u + g + o)
+
+This decides who the permission change applies to.
+
+2️⃣ What Action Is Taken (+ - =)
+
++ > add permission
+- > remove permission
+= > set exact permission (replace completely)
+
+This decides how the permission changes.
+
+3️⃣ Which Permission (r w x)
+
+r = read
+w = write
+x = execute
+
+This decides what type of access is given.
+
+
+So every symbolic chmod follows this formula:
+
+
+( chmod [who][action][permission] file )
+
+
+Example:
+chmod a+x script.sh
+
+= give execute permission to everyone.
+
